@@ -1,11 +1,11 @@
 "use client"
 
-import { ProductDetailsProps } from "@/app/actions"
+import { ProductPurchased } from "@/app/actions"
 import { Header } from "../Header"
 import { Button, Container, HighLight, ImageContainer, InfoContainer, ProductImage, PurchaseSituation, SituationDescription } from "./styles"
 
 interface Props {
-    data: ProductDetailsProps
+    data: ProductPurchased
 }
 
 export function ProductPurchase({data} : Props){
@@ -15,10 +15,10 @@ export function ProductPurchase({data} : Props){
             <InfoContainer>
                 <PurchaseSituation>Compra efetuada!</PurchaseSituation>
                 <ImageContainer>
-                    <ProductImage src={data.imageUrl} alt="Imagem do produto"/>
+                    <ProductImage src={data.product.imageUrl} alt="Imagem do produto"/>
                 </ImageContainer>
                 <SituationDescription>
-                    Uhuul <HighLight>Fulano Silva</HighLight>, sua <HighLight>{data.name}</HighLight> já está a caminho da sua casa.
+                    Uhuul <HighLight>{data.customerName}</HighLight>, sua <HighLight>{data.product.name}</HighLight> já está a caminho da sua casa.
                 </SituationDescription>
                 <Button href="/">Voltar ao catálogo</Button>
             </InfoContainer>

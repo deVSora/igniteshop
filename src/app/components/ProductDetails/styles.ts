@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import Image from 'next/image'
-import Link from "next/link"
 import {theme} from '../../../lib/theme'
 
 export const Container = styled.div`
@@ -64,7 +63,7 @@ export const ProductDescription = styled.span`
     color: ${theme.text};
 `
 
-export const Button = styled(Link)`
+export const Button = styled.button`
     background-color: ${theme.principal};
     color: ${theme.white};
     border-radius: 8px;
@@ -73,10 +72,6 @@ export const Button = styled(Link)`
     width: 100%;
     padding-block: 20px;
     cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover{
         background-color: ${theme.light};

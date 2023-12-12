@@ -64,6 +64,7 @@ export const Button = styled(Link)`
     margin-top: 86px;
     color: ${theme.principal};
     text-decoration: none;
+    font-weight: bold;
 
     &:hover{
         color: ${theme.light};

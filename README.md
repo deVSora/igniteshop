@@ -3,6 +3,8 @@
 
 
 ## How to Use
+### 0 -> NPM i
+
 ### 1 -> Fill out the .env.local.example with your keys and address. Then, remove ".example" from the file name.
 
 ### 2 -> Next, create new products in your Stripe account. Keep in mind that the products should have one-off pricing. [Stripe Dashboard](https://dashboard.stripe.com/test/products)
